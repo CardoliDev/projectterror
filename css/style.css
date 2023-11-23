@@ -1,0 +1,262 @@
+/* Estilização básica */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E; /* Cor de fundo temática de Berserk */
+    color: #FFFFFF;
+    margin: auto;
+    padding: auto;
+    justify-content: space-around;
+}
+
+header {
+    background-color: darkred; /* Cor de destaque temática de Berserk */
+    text-align: center;
+    padding: 20px;
+    display: block;
+    padding: 10px 20px; /* Aumente o espaçamento para melhor exibição das bordas arredondadas */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;   
+    display: block;
+    justify-content: space-around; 
+    text-align: center;
+}
+
+h2 {
+    text-align: justify;
+    background-color: darkred;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* menu-style.css */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    border-radius: 30px;
+}
+
+  nav ul li {
+    display: inline;
+    padding: 5px;
+    margin-right: 20px;
+    transform: scale(1);
+    transition: transform 0.2s;
+    border-radius: 30px;
+  }
+  
+  nav ul li a {
+    padding: 10px 20px;
+    display: flex;
+    background-color: darkred;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+
+  }
+
+  nav ul li a:hover {
+    background-color: rgb(252, 252, 252);
+    transform: scale(1.1);
+    text-decoration: underline;   
+  }
+  
+
+
+nav a:hover {
+    border: 2px ridge darkred; /* Adicione uma borda quando o mouse estiver sobre o link */
+    color: darkred; /* Altere a cor do texto quando o mouse estiver sobre o link */
+    transition: linear;
+    text-decoration: line-through;
+    margin: 5px;
+}
+
+/* Estilos para os botões do menu */
+.menu-button {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+}
+
+.menu-button:hover {
+    background-color: #ffffff;
+    color: darkred;
+    font-size: large;
+    text-decoration: line-through   ;
+}
+
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    border-color: darkred;
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    background-color: #333;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Isso define a altura da seção para preencher a tela verticalmente */
+    border-radius: 30px;
+    
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 400px;
+}
+
+section p {
+    margin-top: 20px;
+    max-width: 800px;
+    color: #FFFFFF;
+    text-align: justify;
+
+}
+
+section h2 {
+
+    color: #ffffff;
+}
+
+.nomearco {
+    display: block;
+    text-align: center;
+    background-color: darkred;
+    color: #ffffff;
+    text-decoration: none;
+    padding: auto;
+    margin:0 0 10 0;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+section a {
+    display: block;
+    text-align: center;
+    background-color: darkred;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0px 0px;
+    border-width:0px ;
+    margin:auto;
+    border-radius: 20px;
+}
+
+.voltar {
+    display: flex;
+    text-align: center;
+    background-color: darkred;
+    color: #FFFFFF;
+    border-radius: 40px;
+    border: none;
+}
+
+section a:hover {
+    background-color: #ffffff;
+    color: darkred;
+    font-size: large;
+    text-decoration: line-through;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+#leia {
+    padding: 10px 20px;
+    display: block;
+    background-color: darkred;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+}
+
+#leia:hover {
+    background-color: #ffffff;
+    color: darkred;
+    font-size: large;
+    text-decoration: line-through   ;  
+}
+/* Responsividade */
+section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+@media screen and (width: 780px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        padding: 0%;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .nav-buttons {
+        flex-direction: column; /* Empilhe os botões de navegação verticalmente */
+    }
+    .menu-button {
+        width: 100%; /* Faça os botões de menu ocuparem toda a largura */
+    }
+
+}
+
+    @media screen and (max-height: 600px) {
+        /* Esconda a imagem quando a altura da tela for igual ou menor que 600px */
+        img {
+            display: none;
+            width: 10%;
+        }
+
+        section p {
+            font-size: 12px;
+        }
+
+    }
